@@ -55,11 +55,9 @@ jobs:
           images: |-
             ghcr.io/${{ github.repository }}
           tags: |-
-            type=schedule,enable=false
+            type=raw,value=latest,enable=true
           flavor: |-
-            # See https://github.com/docker/metadata-action#latest-tag
             latest=true
-            prefix=,onlatest=false
           labels: |-
             maintainer=${{ github.repository_owner }}
             org.opencontainers.image.authors=${{ github.repository_owner }}
