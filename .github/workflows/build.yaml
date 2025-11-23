@@ -54,6 +54,7 @@ jobs:
         with:
           images: |-
             ghcr.io/${{ github.repository }}
+          tags: ""
           flavor: |-
             # See https://github.com/docker/metadata-action#latest-tag
             latest=true
